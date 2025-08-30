@@ -1,14 +1,15 @@
 import parin;
+import video;
 
 // Called once when the game starts.
 void ready() {
-    lockResolution(320, 180);
+    lockResolution(VideoWidth, VideoHeight);
 }
 
 // Called every frame while the game is running.
 // If true is returned, then the game will stop running.
 bool update(float dt) {
-    drawDebugText("Hello world!", Vec2(8));
+
     return false;
 }
 
