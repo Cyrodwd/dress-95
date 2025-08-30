@@ -1,0 +1,26 @@
+{
+    "authors" : ["Cyrodwd"],
+    "copyright" : "Copyright © 2025, Cyrodwd",
+    "description" : "A game made with Parin.",
+    "license" : "MIT",
+    "name" : "dress95",
+    "stringImportPaths": [
+        "assets"
+    ],
+    "dependencies": {
+        "joka": "*",
+        "parin": "*"
+    },
+    "configurations": [
+        {
+            "name": "default",
+            "targetType": "executable"
+        },
+        {
+            "name": "wasm",
+            "targetType": "library",
+            "targetName": "game_wasm",
+            "dflags": ["-mtriple=wasm32-unknown-unknown-wasm", "-checkaction=halt", "-i", "--release", "-betterC"]
+        }
+    ]
+}
